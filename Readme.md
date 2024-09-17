@@ -17,20 +17,16 @@ This effort attempts to formulate a **decentralized** approach to **continuous**
 
 We hope that this format can prevent misrepresentation of methods, have archival value through a minimal but necessary level of reproducibility, and provide the basis for informed decision making regarding choice of cell type annotation methods for specific tasks.
 
-#### References
-
-[1] [2021 Luecken et al.](https://openreview.net/forum?id=gN35BGa1Rt) <br>
-[2] [2019 Mitchell et al.](https://arxiv.org/pdf/1810.03993.pdf) <br>
-[3] [2021 Gebru et al.](https://arxiv.org/pdf/1803.09010.pdf) <br>
-
 ----
 
 ### BICAN Mapping Task Force benchmark datasets
  
-Priority | Data set | Characteristics | Status | Download
-1.1 | HMBA Basal Ganglia | Donor effects, multi-species | Ready | S3 Link TBD
-1.2 | Siletti el al. Human Brain | Donor effects | Ready | S3 Link TBD
+| Priority | Data set | Characteristics | Status | Download
+| -- | -- | -- |  -- | --|
+| 1.1 | HMBA Basal Ganglia | Donor effects, multi-species | Ready | S3 Link TBD
+| 1.2 | Siletti el al. Human Brain | Donor effects | Ready | S3 Link TBD
 
+----
 
 ### Environment
 ```bash
@@ -44,26 +40,6 @@ pip install gdown timebudget autopep8 toml sklearn
 pip install jupyterlab
 pip install -e .
 ```
-
- ### Pilot dataset
-```bash
-# Download
-source scripts/download_scripts.sh
-get_bmark_pilot /allen/programs/celltypes/workgroups/mousecelltypes/benchmarking/dat/pilot/
-
-# Processing raw data with codes in ./scripts
-python -m make_pilot_h5ad --data_path /allen/programs/celltypes/workgroups/mousecelltypes/benchmarking/dat/pilot --min_sample_thr 20 --write_h5ad 1
-python -m make_pilot_markers --data_path /allen/programs/celltypes/workgroups/mousecelltypes/benchmarking/dat/pilot --write_csv 1
-```
-
-### Config
-Create a `config.toml` file at the repository root with appropriate `data_dir` path:
-```
-['pilot']
-data_dir = '/allen/programs/celltypes/workgroups/mousecelltypes/benchmarking/dat/pilot/'
-```
- - `config.toml` is accessed through `load_config` in `bmark.utils.config`. 
- - Use `config.toml` to include any other hardcoded paths, needed for notebooks/ scripts to work correctly.
-
- ### Contributors
-Rohan Gala, Nelson Johansen, Raymond Sanchez, Kyle Travaglini
+----
+### Contributors
+TBD
