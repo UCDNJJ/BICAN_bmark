@@ -11,7 +11,7 @@ Distribution by `cluster_label`:<br>
 <img align='center' style="padding:10px 0px 10px 0px; border-radius: 0%" src="./cluster_distribution.png"/>
 
 Distribution by `subclass_label`:<br>
-<img align='center' width=400 style="padding:10px 0px 10px 0px; border-radius: 0%" src="./subclass_distribution.png"/>
+<img align='center' widt h=400 style="padding:10px 0px 10px 0px; border-radius: 0%" src="./subclass_distribution.png"/>
     
  - Primary data resources:
     - [Allen Institute Taxonomy](https://docs.google.com/document/d/1aP3yfpGT4rtI01lZ6-TB4wpPQU4U9sIlTQJVQa9DARA/edit#heading=h.o50obbrfixzs): Description of dataset and S3 downloads for original Allen Institute Taxonomy (AIT) file.
@@ -27,7 +27,7 @@ Distribution by `subclass_label`:<br>
  - Study technical and biological factors influencing model confidence
 
 ### Data integrity:
- - [Exploratory notebook](XYZ.ipynb)
+ - [Exploratory notebook](https://github.com/UCDNJJ/BICAN_bmark/blob/main/notebooks/HMBA_BG_Macaque_benchmark.ipynb)
  - Validation scripts
 
 ### Metadata data frame:
