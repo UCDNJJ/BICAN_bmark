@@ -27,6 +27,7 @@ We hope that this format can prevent misrepresentation of methods, have archival
 | 1.2 | Siletti el al. Human Brain | Donor effects | Ready | S3 Link TBD
 
 ----
+
 ### Benchmark format and expectations
 
 The BICAN benchmark files extend the [Allen Inistute Taxonomy schema](https://github.com/AllenInstitute/AllenInstituteTaxonomy) by including a benchmark key in the `uns` of each anndata file which specifies train and validation splits. We have prespecificed a 10-fold cross-validation splits to compare mapping methods on the various benchmark tasks. Users can access the k-fold indices as follows:
