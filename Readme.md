@@ -27,6 +27,22 @@ We hope that this format can prevent misrepresentation of methods, have archival
 | 1.2 | Siletti el al. Human Brain | Donor effects | Ready | S3 Link TBD
 
 ----
+### Benchmark format and expectations
+
+The BICAN benchmark files extend the [Allen Inistute Taxonomy schema](https://github.com/AllenInstitute/AllenInstituteTaxonomy) by including a benchmark key in the `uns` of each anndata file which specifies train and validation splits. We have prespecificed a 10-fold cross-validation splits to compare mapping methods on the various benchmark tasks. Users can access the k-fold indices as follows:
+
+```
+benchamrk_anndata.uns.benchmark.k_fold["fold_1"].train_ind
+benchamrk_anndata.uns.benchmark.k_fold["fold_1"].val_ind
+```
+
+It is expected that the mapping method train only on samples in `train_ind` then validate on samples specified in `val_ind`. Mapping method results should conform to the follow standard:
+
+| cell_id | [Annotation_level]_[MAPPING_METHOD_NAME]_label | [Annotation_level]_[MAPPING_METHOD_NAME]_score
+| -- | -- | -- | 
+| adata.obs.index[`val_ind`] | Annotation name from taxonomy | Numeric indicating confidence of label assignment ranging from 0-1 |
+
+----
 
 ### Environment
 ```bash
