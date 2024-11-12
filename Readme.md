@@ -11,11 +11,11 @@ In particular we:
 4. Report evaluation for each cell type annotation method in a way that permits a fair comparisons across methods.
 
 This effort attempts to formulate a **decentralized** approach to **continuous** benchmarking.
- - Individualcomputational groups are only responsible for tuning and submitting results for their own methods.
+ - Individual computational groups are only responsible for tuning and submitting results for their own methods.
  - New methods can be added at any time, but results can be compared in a fair manner to previously submitted methods.
  - All reporting (data + model cards) is intended to be succinct yet accessible to a non-expert.
 
-We hope that this format can prevent misrepresentation of methods, have archival value through a minimal but necessary level of reproducibility, and provide the basis for informed decision making regarding choice of cell type annotation methods for specific tasks.
+We hope that this benchmarking format can provide the basis for informed decision making regarding choice of cell type annotation methods for specific tasks.
 
 ----
 
