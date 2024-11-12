@@ -44,19 +44,5 @@ It is expected that the mapping method train only on samples in `train_ind` then
 | adata.obs.index[`val_ind`] | Annotation name from taxonomy | Numeric indicating confidence of label assignment ranging from 0-1 |
 
 ----
-
-### Environment
-```bash
-conda create -n bmark
-conda activate bmark
-conda install python==3.8
-conda install seaborn scikit-learn statsmodels numba pytables
-conda install -c conda-forge python-igraph leidenalg
-pip install scanpy
-pip install gdown timebudget autopep8 toml sklearn
-pip install jupyterlab
-pip install -e .
-```
-----
 ### Contributors
 TBD
